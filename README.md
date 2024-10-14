@@ -23,7 +23,7 @@ Here's a breakdown of the avoidance alogrithm:
 4. Determining Avoidance Field: An avoidance field is calculated using the formula:
 field = sqrtMeanDistance + 1000/(sqrt(numDots*20))
 This formula adjusts the field based on the total number of dots and the mean distance to the closest dots.
-The square root of the mean distance (sqrtMeanDistance) is used to make the field grow more slowly as distance increases.
+The square root of the mean distance (sqrtMeanDistance) is used to make the field grow more slowly as distance increases. (An alternative based on density might be interesting to explore - "1000" in this example is the length of the field on which the dots move. In my example this worked better for avoidance than a naive density approach)
 
 5. Applying Avoidance Forces:
 For each of the three closest dots:
